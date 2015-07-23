@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Technopark</title>
+	<link href="svg/favicon.ico" rel="icon" type="image/x-icon">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/jquery.fs.selecter.css">
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<div class="block-one">
+				<img class="img-menu" src="svg/menu_white.svg" alt="menu">
+				<img class="logo" src="svg/logo_big.svg" alt="logo">
+				<img class="img-search" src="svg/search_white.svg" alt="search">
+				<img class="img-cart" src="svg/cart_white.svg" alt="cart">
+				<p class="number">8 800 777 50 50 </p>
+				<div class="search">
+					<img src="svg/search_white.svg" alt="search">
+					<input type="text" size="40" placeholder="поиск товаров">
+				</div>
+				<a href="#">доставка и оплата</a>
+			</div>
+			<div class="block-two">
+				<nav class="menu">
+					<ul>
+						<li><a href="#">мобильные телефоны</a></li>
+						<li><a href="#">планшеты</a></li>
+						<li class="active"><a href="#">фототехника</a></li>
+						<li><a href="#">ноутбуки</a></li>
+						<li><a href="#">телевизоры</a></li>
+					</ul>
+				</nav>
+				<a class="basket" href="#"><img src="svg/cart_white.svg" alt="cart"><span>корзина</span></a>
+			</div>
+		</header>
+
+		<div class="filter">
+			<div class="selector type">
+			<select class="type">
+				<option value="1">компакт-камера</option>
+				<option value="2">беззеркальная</option>
+				<option value="3">зеркальная</option>
+				<option value="4">среднеформатная</option>
+			</select>
+			</div>
+			<div class="selector brand">
+			<select class="brand">
+				<option value="1">canon</option>
+				<option value="2">nikon</option>
+				<option value="3">sony</option>
+				<option value="4">fujifilm</option>
+				<option value="4">samsung</option>
+				<option value="4">olympus</option>
+				<option value="4">panasonic</option>
+				<option value="4">polaroid</option>
+			</select>
+			</div>
+			<div class="price">
+				<p>по цене</p>
+				<div class="input from">
+					<p>от</p>
+					<input type="text" size="5" placeholder="500 000">
+				</div>
+				<div class="input before">
+					<p>до</p>
+					<input type="text" size="8" placeholder="25 000 000">
+				</div>
+				<p class="rub">рублей</p>
+			</div>
+			<div class="small-size ">
+				<p>Фототехника</p>
+				<img src="svg/filter_dark.svg" alt="filter">
+			</div>
+		</div>
+
+		<div class="camera">
+			<div class="row">
+				<div class="discount span2">
+					<img src="images/xe2.png" alt="camera">
+					<div class="info">
+						<p class="name">Fujifilm X-E2 Kit 18-55mm</p>
+						<p class="detail">Беззеркальная 16.3 Мп 1.5 crop<br/>С объективом F2.8-4.0 18-55 мм<br/>Экран 3" 1 040 000 пикс.<br/>Электронный видоискатель<br/>Металлический корпус<br/>Life View с автофокусом<br/>ISO 200--2500<br/>Съёмка Full HD видео 60 кадров/сек<br/>Поддержка карт SD, SDHC, SDXC<br/>WiFi</p>
+						<p class="dic-price">14 850 000 руб.</p>
+						<p class="price">12 999 000 руб. <img class="cart" src="svg/cart_red.svg" alt="cart"></p>
+					</div>
+				</div>
+				<div class="foto-camera span1">
+					<img class="foto" src="images/700d.png" alt="700d">
+					<div class="info">
+						<p class="name">Canon EOS 700D Kit 18-55 IS STM</p>
+						<p class="detail">Зеркальная, 18 Мп 1.6 crop,<br/>с объективом F3.5-5.6 18-55 мм,<br/>экран 3" сенсорный, поворотный,<br/>видоискатель оптический</p>
+						<p class="price">8 355 000 руб. <img class="cart" src="svg/cart_blue.svg" alt="cart"></p>
+					</div>
+				</div>
+				<div class="foto-camera span1 last">
+					<img class="foto" src="images/x100s.png" alt="700d">
+					<div class="info">
+						<p class="name">Fujifilm X100S</p>
+						<p class="detail">Компакт-камера, 16.3 Мп 1.5 crop, F2.0<br/>35 мм, экран 2.8"</p>
+						<p class="price">12 999 000 руб. <img class="cart" src="svg/cart_blue.svg" alt="cart"></p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="foto-camera span1">
+					<img class="foto" src="images/d3200.png" alt="700d">
+					<div class="info">
+						<p class="name">Nikon D3200 Kit 18-55mm VR</p>
+						<p class="detail">Зеркальная, 24.2 Мп 1.5 crop,<br/>с объективом F3.5-5.6 18-55 мм,<br/>экран 3", видоискатель оптический</p>
+						<p class="price">5 967 000 руб. <img class="cart" src="svg/cart_blue.svg" alt="cart"></p>
+					</div>
+				</div>
+				<div class="foto-camera span1">
+					<img class="foto" src="images/a5000.png" alt="700d">
+					<div class="info">
+						<p class="name">Sony Alpha a5000 Kit 16-50mm</p>
+						<p class="detail">Беззеркальная 20.1 Мп 1.5 crop<br/>c объективом F3.5-5.6 16-50 мм<br/>Экран 3" поворотный, WiFi</p>
+						<p class="price">6 900 000 руб. <img class="cart" src="svg/cart_blue.svg" alt="cart"></p>
+					</div>
+				</div>
+				<div class="foto-camera span1">
+					<img class="foto" src="images/1200d.png" alt="700d">
+					<div class="info">
+						<p class="name">Canon EOS 1200D Kit 18-55mm IS II</p>
+						<p class="detail">Зеркальная, 18 Мп 1.6 crop,<br/>с объективом F3.5-5.6 18-55 мм,<br/>экран 3", видоискатель оптический</p>
+						<p class="price">5 967 000 руб. <img class="cart" src="svg/cart_blue.svg" alt="cart"></p>
+					</div>
+				</div>
+				<div class="foto-camera span1 last">
+					<img class="foto" src="images/g7x.png" alt="700d">
+					<div class="info">
+						<p class="name">Canon PowerShot G7 X</p>
+						<p class="detail">Компакт-камера, 20.2 Мп 1",F1.8-2.8<br/>24-100 мм 4X, экран 3" сенсорный<br/>видоискатель электронный, WiFi</p>
+						<p class="price">8 499 000 руб. <img class="cart" src="svg/cart_blue.svg" alt="cart"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/jquery.fs.selecter.min.js"></script>
+	<script src="http://yastatic.net/modernizr/2.7.1/modernizr.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
