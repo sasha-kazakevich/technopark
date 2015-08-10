@@ -296,7 +296,60 @@
 	width: 21px;
 	float: right;
 }
+
 @media screen and (max-width: 1199px){
+	.container {
+		width: 720px;
+	}
+	.span1 {
+		width: 50%;
+	}
+	.span2,
+	.span3,
+	.span4 {
+		width: 100%;
+	}
+	.header .block-one .search {
+		width: 250px;
+	}
+	.header .block-one .search input {
+		width: 150px;
+	}
+	.header .block-one a {
+		display: none;
+	}
+	.header .block-two nav ul li {
+		padding: 10px 10px;
+		font-size: 13px;
+	}
+	.header .block-two .basket {
+		margin-left: 35px;
+	}
+	.header .block-two .basket span{
+		display: none;
+	}
+	.filter {
+		font-size: 9px;
+	}
+	.filter .type {
+		width: 220px;
+	}
+	.filter .brand {
+		margin-left: 15px;
+		width: 210px;
+	}
+	.filter .price .input {
+		width: 100px;
+	}
+	.filter .price .rub {
+		color: #fff;
+	}
+	.camera .middle {
+		border-right: 1px solid #fff;
+	}
+}
+
+@media screen and (max-width: 719px){
 	.container {
 		width: 320px;
 	}
@@ -308,6 +361,8 @@
 	}
 	.header .block-one {
 		padding: 0;
+		display: block;
+		overflow: hidden;
 	}
 	.header .block-one .number,
 	.header .block-one a,
@@ -337,13 +392,39 @@
 	.header .block-one img {
 		padding: 12px;
 		cursor: pointer;
+		float: left;
+	}
+	.header .block-one .search {
+		margin-bottom: 2px;
+	}
+	.header .block-one .search img {
+		display: none;
+	}
+	.header .block-two {
+		margin: 0;
+		display: block;
+	}
+	.header .block-two .menu {
+		display: none;
+	}
+	.header .block-two nav ul li {
+		font-size: 11px;
+	}
+	.header .block-two .basket {
+		display: none;
 	}
 	.filter {
 		margin: 0;
+		display: block;
 	}
-	.filter .selector,
-	.filter .price {
-		display: none;
+	.filter .selector {
+		float: left;
+	}
+	.filter .type {
+		width: 150px;
+	}
+	.filter .brand {
+		width: 150px;
 	}
 	.filter .small-size {
 		width: 100%;

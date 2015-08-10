@@ -13,19 +13,19 @@
 	<div class="container">
 		<header class="header">
 			<div class="block-one">
-				<img class="img-menu" src="svg/menu_white.svg" alt="menu">
+				<img id="img-menu" class="img-menu" src="svg/menu_white.svg" alt="menu">
 				<img class="logo" src="svg/logo_big.svg" alt="logo">
-				<img class="img-search" src="svg/search_white.svg" alt="search">
+				<img id="img-search" class="img-search" src="svg/search_white.svg" alt="search">
 				<img class="img-cart" src="svg/cart_white.svg" alt="cart">
 				<p class="number">8 800 777 50 50 </p>
-				<div class="search">
+				<div class="search" id ="search">
 					<img src="svg/search_white.svg" alt="search">
 					<input type="text" size="40" placeholder="поиск товаров">
 				</div>
 				<a href="#">доставка и оплата</a>
 			</div>
 			<div class="block-two">
-				<nav class="menu">
+				<nav class="menu" id="menu">
 					<ul>
 						<li><a href="#">мобильные телефоны</a></li>
 						<li><a href="#">планшеты</a></li>
@@ -39,6 +39,10 @@
 		</header>
 
 		<div class="filter">
+			<div class="small-size">
+				<p>Фототехника</p>
+				<img id="img-filter" src="svg/filter_dark.svg" alt="filter">
+			</div>
 			<div class="selector type">
 			<select class="type">
 				<option value="1">компакт-камера</option>
@@ -71,15 +75,12 @@
 				</div>
 				<p class="rub">рублей</p>
 			</div>
-			<div class="small-size ">
-				<p>Фототехника</p>
-				<img src="svg/filter_dark.svg" alt="filter">
-			</div>
+			
 		</div>
 
 		<div class="camera">
 			<div class="row">
-				<div class="discount span2">
+				<div class="discount span2 middle">
 					<img src="images/xe2.png" alt="camera">
 					<div class="info">
 						<p class="name">Fujifilm X-E2 Kit 18-55mm</p>
@@ -114,7 +115,7 @@
 						<p class="price">5 967 000 руб. <img class="cart" src="svg/cart_blue.svg" alt="cart"></p>
 					</div>
 				</div>
-				<div class="foto-camera span1">
+				<div class="foto-camera span1 middle">
 					<img class="foto" src="images/a5000.png" alt="700d">
 					<div class="info">
 						<p class="name">Sony Alpha a5000 Kit 16-50mm</p>

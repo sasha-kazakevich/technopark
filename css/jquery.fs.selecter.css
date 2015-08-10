@@ -142,3 +142,11 @@
   color: #48F;
   background-color: #f5f9ff;
 }
+@media screen and (max-width: 1199px) {
+   .selecter-selected {
+    font-size: 10px;
+   }
+   .selecter-item {
+    font-size: 10px;
+   }
+}
