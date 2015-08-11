@@ -413,6 +413,11 @@
 	.header .block-two .basket {
 		display: none;
 	}
+	.header .block-one .open,
+	.header .block-two .open,
+	.filter .open {
+		display: block;
+	}
 	.filter {
 		margin: 0;
 		display: block;

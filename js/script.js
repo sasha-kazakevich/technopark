@@ -5,16 +5,14 @@ $(document).ready(function(){
     $("select.brand").selecter({
     	label: "любого бренда"
     });
-    $("#img-menu").click(function(){
-    	$("#menu").toggle("fast");
-	});
-	$("#img-search").click(function(){
-     	$("#search").toggle("fast");
-	});
-	$("#img-filter").click(function(){
-		$(".selector").toggle("fast");
-	});
 
+    $("#img-menu").on("click", function () {
+        $("#menu").toggleClass("open");
+    });
+    $("#img-search").on("click", function() {
+        $("#search").toggleClass("open");
+    });
+    $("#img-filter").on("click", function() {
+    	$(".selector").toggleClass("open");
+    });
  });
-
-
