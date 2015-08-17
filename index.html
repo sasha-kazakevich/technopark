@@ -43,52 +43,54 @@
 				<p>Фототехника</p>
 				<img id="img-filter" src="svg/filter_dark.svg" alt="filter">
 			</div>
-			<div class="selector type">
-			<select class="type">
-				<option value="1">компакт-камера</option>
-				<option value="2">беззеркальная</option>
-				<option value="3">зеркальная</option>
-				<option value="4">среднеформатная</option>
+			<div class="selector type" >
+			<select class="type" id="type">
+				<option value="">любого типа</option>
+				<option value="compact">компакт-камера</option>
+				<option value="mirrorless">беззеркальная</option>
+				<option value="slr">зеркальная</option>
+				<option value="medium">среднеформатная</option>
 			</select>
 			</div>
 			<div class="selector brand">
-			<select class="brand">
-				<option value="1">canon</option>
-				<option value="2">nikon</option>
-				<option value="3">sony</option>
-				<option value="4">fujifilm</option>
-				<option value="5">samsung</option>
-				<option value="6">olympus</option>
-				<option value="7">panasonic</option>
-				<option value="8">polaroid</option>
+			<select class="brand" id="brand">
+				<option value="">любого бренда</option>
+				<option value="canon">canon</option>
+				<option value="nikon">nikon</option>
+				<option value="sony">sony</option>
+				<option value="fujifilm">fujifilm</option>
+				<option value="samsung">samsung</option>
+				<option value="olympus">olympus</option>
+				<option value="panasonic">panasonic</option>
+				<option value="polaroid">polaroid</option>
 			</select>
 			</div>
 			<div class="price">
 				<p>по цене</p>
 				<div class="input from">
 					<p>от</p>
-					<input type="text" size="5" placeholder="500 000">
+					<input id="min-price" type="text" size="5" placeholder="500 000" >
 				</div>
 				<div class="input before">
 					<p>до</p>
-					<input type="text" size="8" placeholder="25 000 000">
+					<input id="max-price" type="text" size="8" placeholder="25 000 000">
 				</div>
 				<p class="rub">рублей</p>
-			</div>	
+			</div>
 		</div>
 
 		<div class="camera">
 			<div class="row">
-				<div class="discount span2 middle">
+				<div class="foto-camera discount span2 middle" data-type="mirrorless" data-name="fujifilm" data-price="12999000">
 					<img src="images/xe2.png" alt="camera">
 					<div class="info">
 						<p class="name">Fujifilm X-E2 Kit 18-55mm</p>
-						<p class="detail">Беззеркальная 16.3 Мп 1.5 crop<br/>С объективом F2.8-4.0 18-55 мм<br/>Экран 3" 1 040 000 пикс.<br/>Электронный видоискатель<br/>Металлический корпус<br/>Life View с автофокусом<br/>ISO 200--2500<br/>Съёмка Full HD видео 60 кадров/сек<br/>Поддержка карт SD, SDHC, SDXC<br/>WiFi</p>
+						<p class="detail" >Беззеркальная 16.3 Мп 1.5 crop<br/>С объективом F2.8-4.0 18-55 мм<br/>Экран 3" 1 040 000 пикс.<br/>Электронный видоискатель<br/>Металлический корпус<br/>Life View с автофокусом<br/>ISO 200--2500<br/>Съёмка Full HD видео 60 кадров/сек<br/>Поддержка карт SD, SDHC, SDXC<br/>WiFi</p>
 						<p class="dic-price">14 850 000 руб.</p>
 						<p class="price">12 999 000 руб. <img class="cart" src="svg/cart_red.svg" alt="cart"></p>
 					</div>
 				</div>
-				<div class="foto-camera span1">
+				<div class="foto-camera span1" data-type="slr" data-name="canon" data-price="8355000">
 					<img class="foto" src="images/700d.png" alt="700d">
 					<div class="info">
 						<p class="name">Canon EOS 700D Kit 18-55 IS STM</p>
@@ -96,7 +98,7 @@
 						<p class="price">8 355 000 руб. <img class="cart" src="svg/cart_blue.svg" alt="cart"></p>
 					</div>
 				</div>
-				<div class="foto-camera span1 last">
+				<div class="foto-camera span1 last" data-type="compact" data-name="fujifilm" data-price="12999000">
 					<img class="foto" src="images/x100s.png" alt="700d">
 					<div class="info">
 						<p class="name">Fujifilm X100S</p>
@@ -104,9 +106,7 @@
 						<p class="price">12 999 000 руб. <img class="cart" src="svg/cart_blue.svg" alt="cart"></p>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="foto-camera span1">
+				<div class="foto-camera span1" data-type="slr" data-name="nikon" data-price="5967000">
 					<img class="foto" src="images/d3200.png" alt="700d">
 					<div class="info">
 						<p class="name">Nikon D3200 Kit 18-55mm VR</p>
@@ -114,15 +114,15 @@
 						<p class="price">5 967 000 руб. <img class="cart" src="svg/cart_blue.svg" alt="cart"></p>
 					</div>
 				</div>
-				<div class="foto-camera span1 middle">
+				<div class="foto-camera span1 middle" data-type="mirrorless" data-name="sony" data-price="6900000">
 					<img class="foto" src="images/a5000.png" alt="700d">
 					<div class="info">
 						<p class="name">Sony Alpha a5000 Kit 16-50mm</p>
-						<p class="detail">Беззеркальная 20.1 Мп 1.5 crop<br/>c объективом F3.5-5.6 16-50 мм<br/>Экран 3" поворотный, WiFi</p>
+						<p class="detail" >Беззеркальная 20.1 Мп 1.5 crop<br/>c объективом F3.5-5.6 16-50 мм<br/>Экран 3" поворотный, WiFi</p>
 						<p class="price">6 900 000 руб. <img class="cart" src="svg/cart_blue.svg" alt="cart"></p>
 					</div>
 				</div>
-				<div class="foto-camera span1">
+				<div class="foto-camera span1" data-type="slr" data-name="canon" data-price="5967000">
 					<img class="foto" src="images/1200d.png" alt="700d">
 					<div class="info">
 						<p class="name">Canon EOS 1200D Kit 18-55mm IS II</p>
@@ -130,7 +130,7 @@
 						<p class="price">5 967 000 руб. <img class="cart" src="svg/cart_blue.svg" alt="cart"></p>
 					</div>
 				</div>
-				<div class="foto-camera span1 last">
+				<div class="foto-camera span1 last" data-type="compact" data-name="canon" data-price="8499000">
 					<img class="foto" src="images/g7x.png" alt="700d">
 					<div class="info">
 						<p class="name">Canon PowerShot G7 X</p>
